@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maiconerrick Phone Accessories</title>
+
+<style>
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+body {
+
+    background: #080808;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+}
+
+header {
+
+    background: #111;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    border-bottom: 2px solid gold;
+
+}
+
+header h1 {
+
+    color: gold;
+
+    font-size: 28px;
+
+}
+
+header p {
+
+    margin-top: 8px;
+
+    letter-spacing: 3px;
+
+}
+
+nav {
+
+    text-align: center;
+
+    padding: 18px;
+
+}
+
+nav a {
+
+    color: gold;
+
+    text-decoration: none;
+
+    margin: 10px;
+
+}
+
+.hero {
+
+    text-align: center;
+
+    padding: 85px 20px;
+
+    background: linear-gradient(135deg, #242424, #080808);
+
+}
+
+.hero h2 {
+
+    color: gold;
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+
+}
+
+.hero p {
+
+    margin-bottom: 25px;
+
+    line-height: 1.7;
+
+}
+
+.button {
+
+    display: inline-block;
+
+    background: gold;
+
+    color: black;
+
+    padding: 14px 25px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+}
+
+.products {
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+}
+
+.products h2 {
+
+    color: gold;
+
+    margin-bottom: 35px;
+
+    font-size: 28px;
+
+}
+
+.product-container {
+
+    display: grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+.product {
+
+    background: #171717;
+
+    border: 1px solid #b8860b;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    padding-bottom: 20px;
+
+    transition: 0.3s;
+
+}
+
+.product:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.product img {
+
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+}
+
+.product h3 {
+
+    color: gold;
+
+    margin: 18px 5px;
+
+}
+
+.product p {
+
+    margin-bottom: 18px;
+
+}
+
+.order {
+
+    display: inline-block;
+
+    background: gold;
+
+    color: black;
+
+    padding: 12px 22px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+}
+
+.about {
+
+    background: #151515;
+
+    text-align: center;
+
+    padding: 55px 20px;
+
+    line-height: 1.8;
+
+}
+
+.about h2,
+
+.contact h2 {
+
+    color: gold;
+
+    margin-bottom: 20px;
+
+}
+
+.contact {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+}
+
+footer {
+
+    background: #111;
+
+    border-top: 2px solid gold;
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: gold;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>MAICONERRICK</h1>
+
+    <p>PHONE ACCESSORIES</p>
+
+</header>
+
+<nav>
+
+    <a href="#home">Home</a>
+
+    <a href="#products">Products</a>
+
+    <a href="#about">About</a>
+
+    <a href="#contact">Contact</a>
+
+</nav>
+
+<section class="hero" id="home">
+
+    <h2>Welcome to Maiconerrick!</h2>
+
+    <p>
+
+    Quality Phone Accessories at Affordable Prices.
+
+    <br>
+
+    Your Satisfaction Is Our Priority.
+
+    </p>
+
+    <a href="#products" class="button">
+
+    SHOP NOW
+
+    </a>
+
+</section>
+
+<section class="products" id="products">
+
+<h2>OUR PRODUCTS</h2>
+
+<div class="product-container">
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1758218096054-ef3c7b56582c?auto=format&fit=crop&w=700&q=80" alt="Phone accessories">
+
+<h3>Phone Cases</h3>
+
+<p>Stylish phone protection</p>
+
+<a class="order" onclick="order('Phone Cases')">Order on WhatsApp</a>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1752832902114-825ca9c530d7?auto=format&fit=crop&w=700&q=80" alt="Phone charger">
+
+<h3>Phone Chargers</h3>
+
+<p>Quality charging accessories</p>
+
+<a class="order" onclick="order('Phone Chargers')">Order on WhatsApp</a>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1750332191594-d5387a69f7c8?auto=format&fit=crop&w=700&q=80" alt="Wireless earbuds">
+
+<h3>AirPods & Earpieces</h3>
+
+<p>Enjoy quality sound</p>
+
+<a class="order" onclick="order('AirPods and Earpieces')">Order on WhatsApp</a>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1758218096054-ef3c7b56582c?auto=format&fit=crop&w=700&q=80" alt="Phone power accessories">
+
+<h3>Power Banks</h3>
+
+<p>Portable charging solutions</p>
+
+<a class="order" onclick="order('Power Banks')">Order on WhatsApp</a>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1750332191594-d5387a69f7c8?auto=format&fit=crop&w=700&q=80" alt="Smart accessories">
+
+<h3>Smart Watches</h3>
+
+<p>Modern technology and style</p>
+
+<a class="order" onclick="order('Smart Watches')">Order on WhatsApp</a>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1752832902114-825ca9c530d7?auto=format&fit=crop&w=700&q=80" alt="Mobile accessories">
+
+<h3>Other Accessories</h3>
+
+<p>Explore more phone accessories</p>
+
+<a class="order" onclick="order('Other Accessories')">Order on WhatsApp</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>ABOUT MAICONERRICK</h2>
+
+<p>
+
+Welcome to Maiconerrick Phone Accessories.
+
+We offer quality phone accessories
+
+at affordable prices.
+
+Shop with us today and enjoy quality products
+
+and excellent customer service.
+
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>CONTACT US</h2>
+
+<p>Have something you want to buy?</p>
+
+<br>
+
+<a class="button"
+
+href="https://wa.me/2347041427447?text=Hello%20Maiconerrick%2C%20I%20want%20to%20make%20an%20enquiry.">
+
+CHAT WITH US ON WHATSAPP
+
+</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 MAICONERRICK PHONE ACCESSORIES</p>
+
+<p>Quality Accessories, Affordable Prices.</p>
+
+</footer>
+
+<script>
+
+function order(product) {
+
+const message =
+
+"Hello Maiconerrick Phone Accessories! I want to order " + product;
+
+const whatsapp =
+
+"https://wa.me/2347041427447?text=" +
+
+encodeURIComponent(message);
+
+window.open(whatsapp, "_blank");
+
+}
+
+</script>
+
+</body>
+
+</html>
